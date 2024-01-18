@@ -1,0 +1,257 @@
+.presentation {
+  font-family: "Share Tech", sans-serif;
+  font-size: 60px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 60vh;
+  text-shadow: 8px 8px 10px #0000008c;
+  background-color: #282c34;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.wrapper {
+  background-color: #282c34;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.tabs {
+  text-align: left;
+  position: relative;
+}
+
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs input + label:hover {
+  color: grey;
+}
+
+.content .item {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  position: absolute;
+  padding: 10px 20px;
+}
+
+#tab-1:checked ~ section #content-1,
+#tab-2:checked ~ section #content-2,
+#tab-3:checked ~ section #content-3,
+#tab-4:checked ~ section #content-4,
+#tab-5:checked ~ section #content-5 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tab-selector {
+  display: none;
+}
+
+.tab {
+  justify-content: center;
+}
+
+.tabs input + label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 20%;
+  transition: all 0.5s;
+  text-align: center;
+  border: none;
+  border-bottom: 0.5pt solid #1d1e22;
+  color: #e7e9f5;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  padding: 5pt 0pt;
+  vertical-align: top;
+  background: #333;
+  box-shadow: 1px 1px 2px 1px #231f20;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 8pt;
+  background: #26292c;
+  margin-bottom: 0.5px;
+  border-radius: 7px 7px 0 0 !important;
+  border-top: 1px solid #3b3d3f;
+  letter-spacing: 0.1666666667em !important;
+  font-family: "antique-olive" !important;
+  background: hsl(232deg 6% 17%);
+  cursor: pointer;
+}
+
+.content {
+  margin: 0px auto;
+  text-align: left;
+  line-height: 20px;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+  display: block;
+  padding: 1.25rem;
+  z-index: 2;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 16% 15%);
+  position: relative;
+}
+
+.container .card {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  z-index: 4 !important;
+  position: relative;
+  background: linear-gradient(#141e30, #243b55);
+  background: #16181a;
+  border-top: 1px solid #3b3d3f;
+  background: hsl(232deg 18% 8%);
+}
+
+.content p {
+  margin: 10px 15px 10px 0;
+  letter-spacing: 0.75px;
+  font-size: 14pt;
+  font-style: normal;
+  color: #f0f2fc;
+  line-height: 30px;
+  margin-top: 10pt;
+  font-family: "freight-display-pro";
+  font-weight: 300 !important;
+}
+
+h2.tab-title.tab-one,
+h2.tab-title.tab-two,
+h2.tab-title.tab-three,
+h2.tab-title.tab-four,
+h2.tab-title.tab-five {
+  display: inline-flex;
+  color: #fff;
+  background-position: bottom center;
+  margin-bottom: 0pt !important;
+  margin-top: 6pt;
+  height: 22pt;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  text-transform: capitalize;
+  font-size: 24px;
+  letter-spacing: 0px;
+  font-weight: 800 !important;
+}
+
+h2.tab-title.tab-one {
+  background: linear-gradient(10deg, purple, rgb(255, 255, 255));
+}
+
+h2.tab-title.tab-two {
+  background: linear-gradient(10deg, blue, rgb(255, 255, 255));
+}
+
+h2.tab-title.tab-three {
+  background: linear-gradient(10deg, green, rgb(255, 255, 255));
+}
+
+h2.tab-title.tab-four {
+  background: linear-gradient(70deg, #ff4400, rgb(255, 255, 255));
+}
+
+h2.tab-title.tab-five {
+  background: linear-gradient(70deg, red, rgb(255, 255, 255));
+}
+
+.tabs input {
+  position: relative;
+  opacity: 0;
+  margin: auto !important;
+  padding: 0;
+}
+
+#tab-1:checked + label {
+  color: orchid;
+}
+
+#tab-2:checked + label {
+  color: rgb(95, 95, 255);
+}
+
+#tab-3:checked + label {
+  color: lightgreen;
+}
+
+#tab-4:checked + label {
+  color: orange;
+}
+
+#tab-5:checked + label {
+  color: tomato;
+}
+
+#tab-1:checked ~ .glider {
+  background: linear-gradient(90deg, purple, rgb(255, 255, 255));
+}
+
+#tab-2:checked ~ .glider {
+  background: linear-gradient(90deg, blue, rgb(255, 255, 255));
+  left: 20%;
+}
+
+#tab-3:checked ~ .glider {
+  background: linear-gradient(90deg, green, rgb(255, 255, 255));
+  left: 40%;
+}
+
+#tab-4:checked ~ .glider {
+  background: linear-gradient(90deg, #ff4400, rgb(255, 255, 255));
+  left: 60%;
+}
+
+#tab-5:checked ~ .glider {
+  background: linear-gradient(90deg, red, rgb(255, 255, 255));
+  left: 80%;
+}
+
+.glider {
+  width: 20%;
+  height: 4.5px;
+  border-radius: 0 0 1px 1px;
+  position: absolute;
+  transition: all 0.3s;
+  top: 36px;
+  z-index: 2;
+}
+
+span.numit {
+  font-size: 12pt;
+  font-family: "muli";
+  font-weight: 600;
+  text-shadow: 0.5px 0.5px 0.5px #e7e9f5;
+  color: #0e101a;
+  margin-right: 2px;
+  margin-left: -2px;
+  padding: 0;
+  color: aliceblue;
+  text-shadow: 0.5pt 0.5pt 0.5pt #2d3748;
+}
+
+a {
+  color: white;
+}
