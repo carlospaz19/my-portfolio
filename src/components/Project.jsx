@@ -246,7 +246,7 @@ const Project = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Project Demo
+                    Project Link
                   </a>
                   <br></br>
                   <a
