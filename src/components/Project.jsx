@@ -11,6 +11,21 @@ const Project = () => {
           <h1>Welcome to my portfolio 1.0</h1>
         </div>
       </section>
+      <section className="intro">
+        <p>
+          Hello, my name is Carlos Paz Ortega.
+          <br></br>
+          Welcome to my professional journey! As a seasoned QA Engineer with 12
+          years of experience, I&apos;ve honed my skills in ensuring software
+          quality and reliability. My journey has been marked by continuous
+          learning, including mastering the MERN (MongoDB, Express.js, React,
+          Node.js) stack technologies. This portfolio is a testament to my
+          commitment to excellence in software testing and a showcase of
+          projects where I&apos;ve applied these cutting-edge skills. Join me in
+          exploring how I&apos;ve contributed to creating robust and
+          user-friendly applications.
+        </p>
+      </section>
       <section className="projects">
         <div className="wrapper">
           <div className="container">
